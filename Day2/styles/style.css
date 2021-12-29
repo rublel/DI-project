@@ -1,0 +1,43 @@
+.walpaper {
+    background-image: url("../img/walpaper.jpg");
+    height: 500px;
+    width: 100%;
+}
+.cover-title {
+    color: #fff;
+    padding: 100px 300px;
+    vertical-align: middle;
+    text-align: center;
+}
+.cover-title h1{
+    line-height: 60px;
+}
+.form-group {
+    padding: 30px 150px;
+}
+.form-control {
+    width: auto !important;
+    display: inline-block;
+}
+.languages {
+    padding: 80px;
+    background: #ebebeb;
+}
+.info-languages {
+    text-align: center;
+}
+.info-languages p {
+    color: silver;
+}
+i {
+    color: #0a53be !important;
+    font-size: 50px;
+    padding: 20px;
+}
+h6 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.col-lang p{
+    padding: 20px 50px;
+}
