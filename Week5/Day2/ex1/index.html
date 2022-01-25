@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The Chocolate </h2>
+        <h3> History of the chocolate </h3>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+    </article>
+    <button id="turnToBold">Turn to bold</button>
+</body>
+</html>
+
+<script>
+    //log the h1
+    let h1 = document.querySelector('article h1')
+    console.log('The h1 content is: ' + h1.textContent);  
+
+    //hide the last p
+    let node = document.querySelectorAll('p')
+    var lastP = node[node.length-1].remove()
+
+    //chqnge the h2 bg to red on clicked on
+    let h2 = document.querySelector('h2')
+    h2.addEventListener("click", colorChange)
+    function colorChange() {
+        h2.style.background = 'red'
+    }
+
+    //hide the h3 on clicked on
+    let h3 = document.querySelector('h3')
+    h3.addEventListener("click", hideH3)
+    function hideH3() {
+        h3.style.display = "none"
+    }
+
+    //Turn the article paragraphe to bold
+    let btn = document.getElementById('turnToBold')
+    btn.addEventListener("click", turnToBold)
+    function turnToBold() {
+        let p = document.querySelectorAll('p')
+        p.forEach(e => e.style.fontWeight = "bold") 
+    }
+
+    //change the fontsize of h1 on mouseover
+    h1.addEventListener("mouseover", changeSize)
+    function changeSize() {
+        randomNumber = Math.floor(Math.random() * 100)
+        h1.style.fontSize = randomNumber + "px"
+    }
+
+    //change the fontsize of 2nd p on mouseover
+    let p2 = node[1]
+    p2.addEventListener("mouseover", fadeOut)
+    function fadeOut() {
+        p2.classList.add("fade-out")
+    }
+
+</script>
