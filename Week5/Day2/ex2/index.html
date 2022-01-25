@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form> 
+</body>
+</html>
+
+<script>
+    //log the form
+    let formulaire = document.querySelector('form')
+    console.log(formulaire.innerHTML);
+
+    //log the inputs by id
+    let fnameId = document.getElementById('fname')
+    let lnameId = document.getElementById('lname')
+    console.log(fnameId, lnameId);
+
+    //log input by name
+    let fnameName = document.querySelector("input[name='fname']")
+    let lnameName = document.querySelector("input[name='lname']")
+    console.log(fnameName, lnameName);
+
+    //get values and append them in ul
+    formulaire.addEventListener("submit", getAndDisplay)
+    function getAndDisplay() {
+        let inputs = document.querySelectorAll('input')
+        let newUl = document.createElement('ul')
+        inputs.forEach(e => console.log(inputs.value))
+    }
+
+</script>
