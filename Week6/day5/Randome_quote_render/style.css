@@ -1,0 +1,122 @@
+
+
+#searchAuthorForm{
+
+    margin-top: 50px;
+    padding: 20px;
+    background-color: coral;
+    color: antiquewhite;
+}
+
+.centerTxt{
+
+    text-align: center;
+}
+
+h1{
+
+    font-size: 100px;
+    font-family: 'Comforter', cursive; 
+}
+
+section{
+
+    background-color: burlywood;
+    padding: 50px;
+    width: 50vw;
+
+}
+
+#innerArea{
+
+    background-color: wheat;
+    font-size: 50px;
+    width: 40vw;
+    height: 75vh;
+    position: relative;
+}
+
+#generateQuoteBtt{
+
+    color: white;
+    background-color: turquoise;
+    border: 5px solid lightskyblue;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    border-color: transparent #ddd #999 transparent;
+}
+
+#quoteArea{
+
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    right: 50px;
+    font-family: 'Comforter', cursive; 
+    font-size: 50px;
+    white-space: pre-wrap; /*Display str with white spaces*/
+}
+
+#quoteMark{
+
+    position: absolute;
+    left: 30px;
+    font-size: 400px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#authorArea{
+
+    position: relative;
+     font-size: 40px;
+     color: turquoise;
+     font-weight: bold;
+     text-align: right;
+     font-family: 'Oswald', sans-serif;
+     white-space: pre-wrap; /*Display str with white spaces*/
+}
+
+#addQuoteBtt{
+
+    color: white;
+    background-color: turquoise;
+    border: 5px solid lightskyblue;
+    border-color: transparent #ddd #999 transparent;
+    background-clip: padding-box; 
+}
+
+ion-icon{
+
+    color: black;
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.badge{
+
+    font-size: 100px;
+    position: absolute;
+    bottom: 15px;
+    left: 14px;
+    font-size: 15px;
+    color: black;
+}
+
+.quoteToDisplayStyle{
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
