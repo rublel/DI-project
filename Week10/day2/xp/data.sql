@@ -6,7 +6,7 @@ CREATE TABLE public (
 
 INSERT INTO public (
     desc,  
-price)
+    price)
 VALUES
     (
         'Small Desk',
