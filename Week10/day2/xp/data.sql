@@ -10,12 +10,12 @@ INSERT INTO public (
 VALUES
     (
         'Small Desk',
-        100
+        105
     ),
     (
         'Large desk',
 		300
-    ),
+    ), 
     (
         'Fan',
         80
