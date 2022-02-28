@@ -10,7 +10,7 @@ INSERT INTO public (
 VALUES
     (
         'Small Desk',
-        1044
+        1034
     ),
     (
         'Large desk',
