@@ -15,5 +15,7 @@ const requestListener = function (req, res) {
     res.end()
 }
 const server = http.createServer(requestListener);
-server.listen(3000);
+server.listen(3000, () => {
+    console.log('You are running on port: ' + server.address().port);
+});
 
