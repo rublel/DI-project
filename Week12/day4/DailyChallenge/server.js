@@ -30,9 +30,4 @@ app.post("/formData", (req, res) => {
     res.send(req.body.email + " send you a message: '" + req.body.message + "'")
 })
 
-
-
-
-
-
 app.listen(8000)  
