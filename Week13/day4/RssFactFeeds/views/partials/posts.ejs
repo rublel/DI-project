@@ -1,0 +1,24 @@
+<div class="card p-4 bg-light mt-2">
+    <h1>The Facts Site</h1>
+    <p>Welcome to the facts site</p>
+    <h3>Posts</h3><br>
+    <% data.forEach(e=> { if(e.categories.includes(option) || e.title.includes(option) || option.length < 1) { %>
+            <h5>
+                <a href="<%= e.link %>">
+                    <%= e.title %>
+                </a>
+            </h5>
+            <p>
+                <%= e.pubDate %> | <%= e.creator %> | %> Categories:
+                        <b>
+                            <% e.categories.forEach(cat=> { %>
+                                <%= cat %>,
+                                    <% }) %>
+                        </b>
+            </p>
+            <p>
+                <%= e.contentSnippet %>
+            </p>
+            <hr>
+            <% }}) %>
+</div>

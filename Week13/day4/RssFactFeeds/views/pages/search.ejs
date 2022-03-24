@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card p-4 bg-light mt-2">
+                <div class="form">
+                    <form id="titleForm" action="/search/title" method="POST">
+                        <label for="title">Search Title:</label>
+                        <input type="text" class="form-control" name="title">
+                        <button class="btn btn-sm btn-primary mt-2">Search</button>
+                    </form>
+                    <br>
+                    <hr><br>
+                    <form id="categoryForm" action="/search/category" method="POST">
+                        <label for="category">Search Category:</label>
+                        <select type="text" class="form-select" name="category">
+                            <option>Choose</option>
+                            <% data.forEach(e=> { %>
+
+                                <% e.categories.forEach(cat=> { %>
+                                    <option>
+                                        <%= cat %>
+                                    </option>
+                                    <% }) %>
+                                        <% }) %>
+                        </select>
+                        <button class="btn btn-sm btn-primary mt-2">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <main>
+                <%- include('../partials/posts'); %>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
