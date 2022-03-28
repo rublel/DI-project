@@ -35,11 +35,9 @@ app.get("/search", (req, res) => {
 
     let arr = [];
     (async () => {
-
         let feed = await parser.parseURL('https://www.thefactsite.com/feed/');
         feed.items.forEach(item => {
             arr.push(item)
-            console.log(item);
         });
         res.render('pages/search', {
             data: arr,

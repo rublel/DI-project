@@ -2,7 +2,8 @@
     <h1>The Facts Site</h1>
     <p>Welcome to the facts site</p>
     <h3>Posts</h3><br>
-    <% data.forEach(e=> { if(e.categories.includes(option) || e.title.includes(option) || option.length < 1) { %>
+    <% data.forEach(e=> { if(e.categories.includes(option) || e.contentSnippet.includes(option) || option.length < 1) {
+            %>
             <h5>
                 <a href="<%= e.link %>">
                     <%= e.title %>
